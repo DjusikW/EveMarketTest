@@ -1,0 +1,269 @@
+html {
+  background-color: rgb(24, 24, 24);
+}
+
+body {
+  background-image: linear-gradient(rgb(25, 24, 24), rgb(0, 0, 0));
+  display: inline-block;
+  min-height: 100%;
+  min-width: 99%;
+}
+
+.main-content {
+  border: 2px solid rgb(55, 55, 56);
+  display: flex;
+}
+
+.main-content .content {
+  width: 100%;
+  min-height: 100%;
+}
+
+.main-content .content .h1_span {
+  display: flex;
+  justify-content: center;
+  color: rgb(42, 42, 42);
+}
+
+.main-content .content .h1_span h1 {
+  padding: 8px;
+  margin: 0 0 0 0;
+  max-width: 50%;
+  font-size: 40px;
+  font-style: italic;
+  /*border: 2px solid rgb(180, 102, 30);*/
+}
+
+.main-content .content .about_list {
+  text-align: center;
+  font-size: 2vw;
+  font-style: italic;
+  color: rgb(255, 222, 174);
+}
+
+.main-content .content {
+  width: 100%;
+  background-image: linear-gradient(rgb(110, 110, 110), rgb(80, 80, 80), rgb(35, 35, 35), rgb(0, 0, 0));
+  color: rgb(255, 228, 196);
+}
+
+.main-content .content .info_about_ship {
+  display: none;
+}
+
+.main-content .content .hide {
+  display: none;
+}
+
+.main-content .content .info_about_ship.activeS {
+  display: block;
+}
+
+.main-content .content .tabs_item {
+  display: none;
+}
+
+.main-content .content .tabs_item {
+  margin: 5px 5px 10px 5px;
+}
+
+.main-content .content .tabs_item.active {
+  display: block;
+  opacity: 0;
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-content .sidebar h3 {
+  color: rgb(218, 206, 187);
+}
+
+.main-content .sidebar {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgb(180, 102, 30), rgb(0, 0, 0)) 1;
+  background-image: linear-gradient(rgb(55, 55, 55), rgb(0, 0, 0));
+  padding: 0 2 0 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .sidebar button {
+  color: rgb(225, 209, 183);
+  border: 2px solid rgb(160, 91, 22);
+  width: 150px;
+  height: 50px;
+  font-size: 1vw;
+  background-color: rgb(60, 60, 60);
+}
+
+.main-content .sidebar .btn-now:hover {
+  animation: slowPulse 1.5s forwards;
+}
+
+@keyframes slowPulse {
+  0% {
+    background-color: rgb(93, 93, 93);
+  }
+
+  100% {
+    background-color: rgb(195, 157, 44);
+  }
+}
+
+.main-content .sidebar .tabs_nav-btn.active {
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(195, 157, 44);
+  }
+
+  100% {
+    background-color: rgb(93, 93, 93);
+  }
+}
+
+.ships li{
+list-style: none;
+}
+.ships ul {
+  padding: 0 5 0 10;
+}
+.info_about_ship h4{
+margin: 5 0 0 2;
+}
+
+.info_about_ship .structure h4 {
+  color: burlywood;
+}
+.info_about_ship .structure b {
+  color: burlywood;
+}
+
+.info_about_ship .power_point h4{
+ color: aqua;
+}
+.info_about_ship .power_point b{
+  color: aqua;
+}
+
+.info_about_ship .combat_stats h4 {
+color: rgb(173, 22, 22);
+}
+.info_about_ship .combat_stats b {
+color: rgb(173, 22, 22);
+}
+
+.info_about_ship .navigation h4 {
+color: rgb(16, 158, 16);
+}
+.info_about_ship .navigation b {
+  color: rgb(16, 158, 16);
+}
+.info_about_ship .history {
+  color: sandybrown;
+}
+.sidebar li {
+  list-style: none;
+  margin-top: 2px;
+}
+
+
+.sidebar .first_ul li h3 {
+  text-align: center;
+}
+
+.sidebar .first_ul ul {
+  visibility: hidden;
+}
+
+.sidebar .first_ul li:hover ul {
+  animation: menuO 1.5s forwards;
+  visibility: visible;
+}
+
+@keyframes menuO {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.sidebar .tabs {
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 2px;
+}
+
+
+
+/*.main-content .sidebar .tabs {
+  /* display: flex; 
+  /* gap: 20px; 
+  /* flex-direction: column; 
+  /* margin-left: auto; 
+  /* margin-right: auto; 
+}*/
+
+
+
+
+.content .tabs_item .ships {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.content .tabs_item .ships .shipImg {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.content .tabs_item .ships .frig {
+  border: 2px  solid #d69225;
+}
+.content .tabs_item .ships .ship .shipImg {
+  border: 2px  solid rgb(133, 86, 11);
+}
+
+.logo_img {
+  text-align: center;
+}
+
+.logo {
+  width: 50%;
+  animation: aniShow 3s forwards;
+}
+@keyframes aniShow{
+  0% {
+    opacity: -1;
+    transform: translateX(-500px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.notReady {
+  opacity: 0.3;
+}
